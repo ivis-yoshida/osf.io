@@ -114,6 +114,7 @@ INSTALLED_APPS = (
     'addons.twofactor',
     'addons.wiki',
     'addons.zotero',
+    'addons.myskelton',
 )
 
 # local development using https

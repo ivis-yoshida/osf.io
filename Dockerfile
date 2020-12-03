@@ -44,6 +44,7 @@ COPY ./addons/s3/requirements.txt ./addons/s3/
 COPY ./addons/twofactor/requirements.txt ./addons/twofactor/
 #COPY ./addons/wiki/requirements.txt ./addons/wiki/
 COPY ./addons/zotero/requirements.txt ./addons/zotero/
+COPY ./addons/myskelton/requirements.txt ./addons/myskelton/
 
 RUN set -ex \
     && mkdir -p /var/www \
@@ -124,6 +125,7 @@ COPY ./addons/s3/static/ ./addons/s3/static/
 COPY ./addons/twofactor/static/ ./addons/twofactor/static/
 COPY ./addons/wiki/static/ ./addons/wiki/static/
 COPY ./addons/zotero/static/ ./addons/zotero/static/
+COPY ./addons/myskelton/static/ ./addons/myskelton/static/
 RUN \
     # OSF
     yarn install --frozen-lockfile \
